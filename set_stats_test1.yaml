@@ -1,0 +1,8 @@
+- name: Test set_stats
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Debug set stats
+      ansible.builtin.debug:
+        msg: "{{ does_it_work }}"

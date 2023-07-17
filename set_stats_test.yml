@@ -1,0 +1,9 @@
+- name: Test using set_stats
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Set stats
+      ansible.builtin.set_stats:
+        data:
+          does_it_work: "It works"
